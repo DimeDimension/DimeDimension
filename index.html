@@ -7,7 +7,7 @@
       <style>
       body { background: #171717;
       }
-      .title {
+      div.title {
         color: #c6c6c6;
         padding-top: 60px;
         padding-left: 90px;
@@ -15,14 +15,14 @@
         font-weight: 500;
         font-size: 40px;}
 
-      .subpages {
+      div.subpages {
         padding-left: 90px;
         font-family: Futura, "Trebuchet MS", Arial, sans-serif;
         font-weight: 500;
         font-size: 15px;}
         a { color: #c6c6c6; }
 
-      .aboutInfo {
+      div.aboutInfo {
         text-indent: 25px;
         color: #c6c6c6;
         padding-top: 10px;
@@ -34,21 +34,49 @@
         font-weight: 500;
         font-size: 15px;
         display: table-cell;
-      border: solid red;}
+        border: solid red;
+        }
 
-        .aboutImage {
-          display: table-cell;
-          border: solid red;
-          align: left;
-          width: 600px;
+      div.aboutImage {
+        display: table-cell;
+        border: solid red;
+        align: left;
+        float: left;
+        width: 600px;
+        }
+
+        div.gallery {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 180px;
+          color: #c6c6c6;
+        }
+
+        div.gallery img {
+          width: 100%;
+          height: auto;
+          color: #c6c6c6;
+        }
+
+        div.desc {
+          padding: 15px;
+          text-align: center;
+          color: #c6c6c6;
+        }
+
+        img.mainImage{
+          width: 350px;
+          height: 400px;
+          margin: 0 auto;
         }
 
       </style>
     </head>
 
     <body>
-      <div class = title> DimeDimension </div>
-      <div class = subpages>
+      <div class = "title"> DimeDimension </div>
+      <div class = "subpages">
         <a href="index.html" style="text-decoration:none">About</a> <a> | </a>
         <a href="index.html" style="text-decoration:none">Girls</a> <a> | </a>
         <a href="index.html" style="text-decoration:none">Boys</a> <a> | </a>
@@ -58,14 +86,15 @@
 
       <div style = "width: 100%; display: table;">
         <div style="display: table-row">
-          <div class = aboutInfo>
+          <div class = "aboutInfo">
             <p> This is a free to usewith the goal of being the most complete and up to date collection of all preminum snapchat accounts. </p>
             <p> All accounts posted here are free public accounts. However most models have premium accounts which are usually accesible after a payment. All payments will be sorted out with the models themselves, their prefered method can be found on their snapchat stories or by simply asking. Most models also have a set of rules which you must follow or you will be blocked.</p>
             <p> All accounts here have all been verified to the best of our ability to ensure the legitimacy. Our list is also updated daily, so be sure to check back often.</p>
             <p> To get started, simply select one of the options above and start finding quality models. Feel free to search for key words to narrow your search!</p>
           </div>
-          <div class = aboutImage>
-            <img src="https://media.giphy.com/media/HAKR1qcjhQuek/source.gif" alt="Loading" title="Loading" width="250" height"1000"/>
+          <div class = "aboutImage">
+            <img class = "mainImage" src="https://media.giphy.com/media/HAKR1qcjhQuek/source.gif" alt="MainPicture"/>
+            <div class="desc">Add a tettststdescription of the image here</div>
           </div>
         </div>
       </div>
